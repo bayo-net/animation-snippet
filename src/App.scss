@@ -1,0 +1,29 @@
+.App{
+  position: relative;
+}
+
+@keyframes example {
+  20%  { transform: rotate(-180deg)}
+  40%  { transform: translateY(50%) rotate(-180deg)}
+  55%  { transform: translateY(30%) rotate(-180deg)}
+  65%  { transform: translateY(50%) rotate(-180deg)}
+  75%  { transform: translateY(30%) rotate(-180deg)}
+  100% { transform: rotate(360deg)}  
+}
+
+.animation-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100px, -100px);
+  &--bg{
+    position: absolute;
+  }
+  &--box{
+    position: absolute;
+    left: 30px;
+    top: 40px;
+    animation-name: example;
+    animation-duration: 2s;
+  }
+}

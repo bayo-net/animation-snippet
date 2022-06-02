@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import vector from './vector.svg';
+import box from './Box.svg';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="animation-container">
+        <div>
+          <img
+            className="animation-container--bg"
+            src={vector}
+          />
+          <img
+            className="animation-container--box"
+            src= {box}
+          />
+        </div>
+      </div>
     </div>
   );
 }
